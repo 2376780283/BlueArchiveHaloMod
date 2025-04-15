@@ -12,7 +12,7 @@ public class ShirokoHaloModel extends GeoModel<ShirokoHaloItem> {
 
     @Override
     public Identifier getTextureResource(ShirokoHaloItem animatable) {
-        return Identifier.of("bluearchive", "textures/item/shiroko.png");
+        return Identifier.of("bluearchive", "textures/item/shiroko.texture.png");
     }
 
     @Override

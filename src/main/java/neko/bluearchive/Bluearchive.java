@@ -92,7 +92,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
  *                   不见满街漂亮妹，哪个归得程序员？
  */
 /**
-く__,.ヘヽ.        /  ,ー､ 〉
+            ,.ヘヽ.        /  ,ー､ 〉
            ＼ ', !-─‐-i  /  /´
            ／｀ｰ'       L/／｀ヽ､
          /   ／,   /|   ,   ,       ',
