@@ -1,5 +1,6 @@
 package neko.bluearchive;
 
+import neko.bluearchive.item.AliceHaloItem;
 import neko.bluearchive.item.BAMaterials;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
@@ -25,6 +26,13 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
             new ShirokoHaloItem(BAMaterials.SHIROKO_HALO, ArmorItem.Type.HELMET, new Item.Settings())
     );
 
+    // 爱丽丝的光环
+    public static final Item ALICE_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "alice_halo"),
+            new AliceHaloItem(BAMaterials.ALICE_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
     // 创造物品组
     public static final ItemGroup ITEM_GROUP = Registry.register(
             Registries.ITEM_GROUP,
@@ -35,6 +43,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
                     .entries((context, entries) -> {
                         entries.add(ALS);             // 爱丽丝的身份证
                         entries.add(SHIROKO_HALO);    // 白子的光环
+                        entries.add(ALICE_HALO);    // 爱丽丝的光环
                     })
                     .build()
     );
@@ -44,6 +53,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
 
     @Override
     public void onInitialize() {
+        // 注册“卧槽，盒！装逼我让你飞起来”音效
         Registry.register(Registries.SOUND_EVENT, BOX_SOUND_ID, BOX_SOUND);
         Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "als"), ALS);
 
