@@ -2,7 +2,6 @@ package neko.bluearchive.item;
 
 import neko.bluearchive.client.renderer.ShirokoHaloRenderer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
-import net.minecraft.client.render.entity.model.PlayerEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ArmorItem;
@@ -19,7 +18,6 @@ import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
-import java.rmi.registry.Registry;
 import java.util.function.Consumer;
 
 public class ShirokoHaloItem extends ArmorItem implements GeoItem {
