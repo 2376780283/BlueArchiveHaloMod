@@ -1,18 +1,15 @@
 package neko.bluearchive;
 
-import neko.bluearchive.client.renderer.ShirokoHaloRenderer;
+import neko.bluearchive.item.BAMaterials;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib.model.DefaultedItemGeoModel;
-import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import neko.bluearchive.item.ShirokoHaloItem;
 
 public class Bluearchive implements ModInitializer, ClientModInitializer {
@@ -25,7 +22,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
     public static final Item SHIROKO_HALO = Registry.register(
             Registries.ITEM,
             Identifier.of(MOD_ID, "shiroko_halo"),
-            new ShirokoHaloItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Settings())
+            new ShirokoHaloItem(BAMaterials.SHIROKO_HALO, ArmorItem.Type.HELMET, new Item.Settings())
     );
 
     // 创造物品组
