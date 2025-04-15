@@ -56,6 +56,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
     }
 }
 
