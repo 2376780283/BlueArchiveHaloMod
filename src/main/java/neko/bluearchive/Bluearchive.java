@@ -25,7 +25,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
     public static final Item SHIROKO_HALO = Registry.register(
             Registries.ITEM,
             Identifier.of(MOD_ID, "shiroko_halo"),
-            new ShirokoHaloItem(ArmorMaterials.LEATHER.value(), EquipmentSlot.HEAD, new Item.Settings())
+            new ShirokoHaloItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Settings())
     );
 
     // 创造物品组
@@ -59,10 +59,6 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        GeoArmorRenderer.registerArmorRenderer(
-                ShirokoHaloItem.class,
-                ctx -> new ShirokoHaloRenderer()
-        );
     }
 }
 
@@ -97,4 +93,23 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
  *                   奔驰宝马贵者趣，公交自行程序员。
  *                   别人笑我忒疯癫，我笑自己命太贱；
  *                   不见满街漂亮妹，哪个归得程序员？
+ */
+/**
+く__,.ヘヽ.        /  ,ー､ 〉
+           ＼ ', !-─‐-i  /  /´
+           ／｀ｰ'       L/／｀ヽ､
+         /   ／,   /|   ,   ,       ',
+       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
+        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
+          !,/7 '0'     ´0iソ|    |
+          |.从\"    _     ,,,, / |./    |
+          ﾚ'| i＞.､,,__  _,.イ /   .i   |
+            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
+              | |/i 〈|/   i  ,.ﾍ |  i  |
+             .|/ /  ｉ：    ﾍ!    ＼  |
+              kヽ>､ﾊ    _,.ﾍ､    /､!
+              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
+              ﾚ'ヽL__|___i,___,ンﾚ|ノ
+                  ﾄ-,/  |___./
+                  'ｰ'    !_,.:
  */
