@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "bluearchive",
+  "version": "1.0.0",
+  "name": "bluearchive",
+  "description": "碧蓝档案",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "neko.bluearchive.Bluearchive"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "*",
+    "minecraft": "1.21.1"
+  }
+}

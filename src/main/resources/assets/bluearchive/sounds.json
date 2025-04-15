@@ -1,0 +1,12 @@
+{
+  "item.box": {
+    "category": "player",
+    "subtitle": "item.bluearchive.box",
+    "sounds": [
+      {
+        "name": "bluearchive:box",
+        "stream": false
+      }
+    ]
+  }
+}
