@@ -2,6 +2,7 @@ package neko.bluearchive;
 
 import neko.bluearchive.item.AliceHaloItem;
 import neko.bluearchive.item.BAMaterials;
+import neko.bluearchive.item.HinaHaloItem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -33,6 +34,13 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
             new AliceHaloItem(BAMaterials.ALICE_HALO, ArmorItem.Type.HELMET, new Item.Settings())
     );
 
+    // 阳奈的光环
+    public static final Item HINA_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "hina_halo"),
+            new HinaHaloItem(BAMaterials.HINA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
     // 创造物品组
     public static final ItemGroup ITEM_GROUP = Registry.register(
             Registries.ITEM_GROUP,
@@ -44,6 +52,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
                         entries.add(ALS);             // 爱丽丝的身份证
                         entries.add(SHIROKO_HALO);    // 白子的光环
                         entries.add(ALICE_HALO);    // 爱丽丝的光环
+                        entries.add(HINA_HALO);    // 阳奈丝的光环
                     })
                     .build()
     );

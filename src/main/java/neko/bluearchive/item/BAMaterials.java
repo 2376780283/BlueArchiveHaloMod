@@ -69,4 +69,16 @@ public class BAMaterials {
             0.0f,
             false
     );
+
+    // 阳奈的光环
+    public static final RegistryEntry<ArmorMaterial> HINA_HALO = registerMaterial(
+            "hina_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, // ✅ 同上
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
 }
