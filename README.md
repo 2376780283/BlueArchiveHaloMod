@@ -4,7 +4,10 @@
 
 ## 版本支持
 
-**理论支持版本：1.16.5 1.17.1 1.18.2 1.19.2 1.20.1 1.20.4 1.21.1**
+**理论支持版本：1.19.4+**
+
+**因为本项目是从1.21.1开始开发的**
+所以代码用新不用旧，如果要兼容到1.19.4以下需要使用“GeckoLib 3.x”以下的版本。代码写法完全不一样。
 
 ## 🤬 关于那个傻逼原项目
 
@@ -39,7 +42,7 @@ git clone https://github.com/NyaNyagulugulu/ba.git
 ./gradlew build
 
 # 构建其他版本，例如1.16.5
-./gradlew build -PmcVersion=1_16_5
+./gradlew build -PmcVersion=1_19_4
 ```
 
 ## 这个README是“deepsleep”写的，图一乐就行(
