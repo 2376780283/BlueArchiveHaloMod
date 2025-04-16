@@ -1,8 +1,6 @@
 package neko.bluearchive;
 
-import neko.bluearchive.item.AliceHaloItem;
-import neko.bluearchive.item.BAMaterials;
-import neko.bluearchive.item.HinaHaloItem;
+import neko.bluearchive.item.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -12,7 +10,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import neko.bluearchive.item.ShirokoHaloItem;
 
 public class Bluearchive implements ModInitializer, ClientModInitializer {
     public static final String MOD_ID = "bluearchive";
@@ -41,6 +38,105 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
             new HinaHaloItem(BAMaterials.HINA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
     );
 
+    // 阿露的光环
+    public static final Item ARU_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "aru_halo"),
+            new AruHaloItem(BAMaterials.ARU_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 初音的光环
+    public static final Item MIKU_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "miku_halo"),
+            new MikuHaloItem(BAMaterials.MIKU_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 泉奈的光环
+    public static final Item IZUNA_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "izuna_halo"),
+            new IzunaHaloItem(BAMaterials.IZUNA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 小春的光环
+    public static final Item KOHARU_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "koharu_halo"),
+            new KoharuHaloItem(BAMaterials.KOHARU_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 莲望的光环
+    public static final Item HASUMI_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "hasumi_halo"),
+            new HasumiHaloItem(BAMaterials.HASUMI_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 梓的光环
+    public static final Item AZUSA_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "azusa_halo"),
+            new AzusaHaloItem(BAMaterials.AZUSA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 日富美的光环
+    public static final Item HIFUMI_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "hifumi_halo"),
+            new HifumiHaloItem(BAMaterials.HIFUMI_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 小绿的光环
+    public static final Item MIDORI_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "midori_halo"),
+            new MidoriHaloItem(BAMaterials.MIDORI_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 小桃的光环
+    public static final Item MOMOI_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "momoi_halo"),
+            new MomoiHaloItem(BAMaterials.MOMOI_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 未花的光环
+    public static final Item MIKA_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "mika_halo"),
+            new MikaHaloItem(BAMaterials.MIKA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 伊吕波的光环
+    public static final Item IROHA_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "iroha_halo"),
+            new IrohaHaloItem(BAMaterials.IROHA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 诺亚的光环
+    public static final Item NOA_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "noa_halo"),
+            new NoaHaloItem(BAMaterials.NOA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 花子的光环
+    public static final Item HANAKO_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "hanako_halo"),
+            new HanakoHaloItem(BAMaterials.HANAKO_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+    // 玛丽的光环
+    public static final Item MARI_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "mari_halo"),
+            new MariHaloItem(BAMaterials.MARI_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
+
     // 创造物品组
     public static final ItemGroup ITEM_GROUP = Registry.register(
             Registries.ITEM_GROUP,
@@ -49,10 +145,25 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
                     .displayName(Text.translatable("itemGroup.bluearchive.general"))
                     .icon(() -> new ItemStack(ALS))
                     .entries((context, entries) -> {
-                        entries.add(ALS);             // 爱丽丝的身份证
-                        entries.add(SHIROKO_HALO);    // 白子的光环
-                        entries.add(ALICE_HALO);    // 爱丽丝的光环
-                        entries.add(HINA_HALO);    // 日奈丝的光环
+                        entries.add(ALS);            // 爱丽丝的身份证
+                        entries.add(SHIROKO_HALO);   // 白子的光环
+                        entries.add(ALICE_HALO);     // 爱丽丝的光环
+                        entries.add(HINA_HALO);      // 日奈丝的光环
+                        entries.add(ARU_HALO);       // 阿露的光环
+                        entries.add(MIKU_HALO);      // 初音的光环
+                        entries.add(IZUNA_HALO);     // 泉奈的光环
+                        entries.add(KOHARU_HALO);    // 小春的光环
+                        entries.add(HASUMI_HALO);    // 莲望的光环
+                        entries.add(AZUSA_HALO);     // 梓的光环
+                        entries.add(HIFUMI_HALO);    // 日富美的光环
+                        entries.add(MIDORI_HALO);    // 小绿的光环
+                        entries.add(MOMOI_HALO);     // 小桃的光环
+                        entries.add(MIKA_HALO);      // 未花的光环
+                        entries.add(IROHA_HALO);     // 伊吕波的光环
+                        entries.add(NOA_HALO);       // 诺亚的光环
+                        entries.add(HANAKO_HALO);    // 花子的光环
+                        entries.add(MARI_HALO);      // 玛丽的光环
+
                     })
                     .build()
     );

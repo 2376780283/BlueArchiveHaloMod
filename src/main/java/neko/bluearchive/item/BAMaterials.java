@@ -81,4 +81,173 @@ public class BAMaterials {
             0.0f,
             false
     );
+
+    // 阿露的光环
+    public static final RegistryEntry<ArmorMaterial> ARU_HALO = registerMaterial(
+            "aru_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, // ✅ 同上
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 初音的光环
+    public static final RegistryEntry<ArmorMaterial> MIKU_HALO = registerMaterial(
+            "miku_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 泉奈的光环
+    public static final RegistryEntry<ArmorMaterial> IZUNA_HALO = registerMaterial(
+            "izuna_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 小春的光环
+    public static final RegistryEntry<ArmorMaterial> KOHARU_HALO = registerMaterial(
+            "koharu_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 莲望的光环
+    public static final RegistryEntry<ArmorMaterial> HASUMI_HALO = registerMaterial(
+            "hasumi_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 梓的光环
+    public static final RegistryEntry<ArmorMaterial> AZUSA_HALO = registerMaterial(
+            "azusa_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+    
+    // 日富美的光环
+    public static final RegistryEntry<ArmorMaterial> HIFUMI_HALO = registerMaterial(
+            "hifumi_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 小绿的光环
+    public static final RegistryEntry<ArmorMaterial> MIDORI_HALO = registerMaterial(
+            "midori_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 小桃的光环
+    public static final RegistryEntry<ArmorMaterial> MOMOI_HALO = registerMaterial(
+            "momoi_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 未花的光环
+    public static final RegistryEntry<ArmorMaterial> MIKA_HALO = registerMaterial(
+            "mika_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 伊吕波的光环
+    public static final RegistryEntry<ArmorMaterial> IROHA_HALO = registerMaterial(
+            "iroha_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 诺亚的光环
+    public static final RegistryEntry<ArmorMaterial> NOA_HALO = registerMaterial(
+            "noa_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 花子的光环
+    public static final RegistryEntry<ArmorMaterial> HANAKO_HALO = registerMaterial(
+            "hanako_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
+    // 玛丽的光环
+    public static final RegistryEntry<ArmorMaterial> MARI_HALO = registerMaterial(
+            "mari_halo",
+            Map.of(ArmorItem.Type.HELMET, 3),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            () -> Ingredient.ofItems(Items.IRON_INGOT),
+            0.0f,
+            0.0f,
+            false
+    );
+
 }
