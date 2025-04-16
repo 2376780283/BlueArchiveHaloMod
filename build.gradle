@@ -6,7 +6,6 @@ plugins {
 def rawMcVersion = project.hasProperty("mcVersion") ? project.getProperty("mcVersion") : "1_21_1"
 def mcVersion = rawMcVersion.replace('_', '.')
 
-
 def loaderVersion = [
         "1.16.5": "0.11.6",
         "1.17.1": "0.11.7",
@@ -66,6 +65,13 @@ repositories {
     maven {
         name = "GeckoLib"
         url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+    }
+    maven {
+        name = "CurseMaven"
+        url = "https://www.cursemaven.com"
+        content {
+            includeGroup "software.bernie.geckolib"
+        }
     }
 }
 
