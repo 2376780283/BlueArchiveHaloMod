@@ -34,4 +34,8 @@ git clone https://github.com/NyaNyagulugulu/ba.git
 # 构建
 ./gradlew build
 ```
+<<<<<<< HEAD
 ## 这个README是“deepsleep”写的，图一乐就行(
+=======
+## 这个README是“deepsleep”写的，图一乐就行(
+>>>>>>> 4ade2f5a2398c6a267eb83cc5dffd2a831f29a07
