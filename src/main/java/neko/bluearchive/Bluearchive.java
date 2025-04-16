@@ -34,7 +34,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
             new AliceHaloItem(BAMaterials.ALICE_HALO, ArmorItem.Type.HELMET, new Item.Settings())
     );
 
-    // 阳奈的光环
+    // 日奈的光环
     public static final Item HINA_HALO = Registry.register(
             Registries.ITEM,
             Identifier.of(MOD_ID, "hina_halo"),
@@ -52,7 +52,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
                         entries.add(ALS);             // 爱丽丝的身份证
                         entries.add(SHIROKO_HALO);    // 白子的光环
                         entries.add(ALICE_HALO);    // 爱丽丝的光环
-                        entries.add(HINA_HALO);    // 阳奈丝的光环
+                        entries.add(HINA_HALO);    // 日奈丝的光环
                     })
                     .build()
     );

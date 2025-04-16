@@ -70,7 +70,7 @@ public class BAMaterials {
             false
     );
 
-    // 阳奈的光环
+    // 日奈的光环
     public static final RegistryEntry<ArmorMaterial> HINA_HALO = registerMaterial(
             "hina_halo",
             Map.of(ArmorItem.Type.HELMET, 3),
