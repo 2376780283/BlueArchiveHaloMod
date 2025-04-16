@@ -39,7 +39,7 @@ git clone https://github.com/NyaNyagulugulu/ba.git
 ./gradlew build
 
 # 构建其他版本，例如1.16.5
-./gradlew build -PmcVersion=1.16.5
+./gradlew build -PmcVersion=1_16_5
 ```
 
 ## 这个README是“deepsleep”写的，图一乐就行(
