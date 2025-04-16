@@ -24,6 +24,13 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
             new ShirokoHaloItem(BAMaterials.SHIROKO_HALO, ArmorItem.Type.HELMET, new Item.Settings())
     );
 
+    // 邮箱的光环
+    public static final Item YUUKA_HALO = Registry.register(
+            Registries.ITEM,
+            Identifier.of(MOD_ID, "yuuka_halo"),
+            new YuukaHaloItem(BAMaterials.YUUKA_HALO, ArmorItem.Type.HELMET, new Item.Settings())
+    );
+
     // 爱丽丝的光环
     public static final Item ALICE_HALO = Registry.register(
             Registries.ITEM,
@@ -163,7 +170,7 @@ public class Bluearchive implements ModInitializer, ClientModInitializer {
                         entries.add(NOA_HALO);       // 诺亚的光环
                         entries.add(HANAKO_HALO);    // 花子的光环
                         entries.add(MARI_HALO);      // 玛丽的光环
-
+                        entries.add(YUUKA_HALO);      // 邮箱的光环
                     })
                     .build()
     );
