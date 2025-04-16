@@ -1,6 +1,7 @@
 package neko.bluearchive;
 
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -43,7 +44,12 @@ public class GlintItem extends Item {
             if (ticksLeft <= 0) {
                 ServerPlayerEntity player = server.getPlayerManager().getPlayer(uuid);
                 if (player != null) {
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 30, 6000)); // 飞升
+                    // 🧠 如果佩戴的是优香的光环，就不飞
+                    if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() == Bluearchive.YUUKA_HALO) {
+                        player.sendMessage(Text.literal("§7优香：§c让你感受一下来自100kg的负重感"), false);
+                    } else {
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 30, 6000)); // 飞升
+                    }
                 }
                 iterator.remove(); // 移除已执行的玩家
             } else {
