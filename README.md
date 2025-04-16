@@ -47,5 +47,3 @@ git clone https://github.com/NyaNyagulugulu/ba.git
 ./gradlew build -PmcVersion=1_20_1
 ```
 
-## 这个README是“deepsleep”写的，图一乐就行(
-
