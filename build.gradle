@@ -4,6 +4,7 @@ plugins {
 }
 
 def mcVersion = project.hasProperty("mcVersion") ? project.getProperty("mcVersion") : "1.21.1"
+
 def loaderVersion = [
         "1.16.5": "0.11.6",
         "1.17.1": "0.11.7",
@@ -47,7 +48,8 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-    archivesName = project.archives_base_name
+    // 构建文件名带版本号，避免多版本覆盖
+    archivesName = "${project.archives_base_name}-${mcVersion}"
 }
 
 loom {
@@ -90,7 +92,9 @@ processResources {
     }
 }
 
-def targetJavaVersion = 21
+// 根据版本自动选择 Java 版本
+def targetJavaVersion = mcVersion in ["1.16.5", "1.17.1"] ? 8 : 21
+
 tasks.withType(JavaCompile).configureEach {
     it.options.encoding = "UTF-8"
     if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
