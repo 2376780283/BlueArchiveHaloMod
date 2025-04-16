@@ -2,6 +2,10 @@
 
 **原项目地址：https://www.mcmod.cn/class/10170.html**
 
+## 版本支持
+
+**应该会支持到1.16.5到1.21.1**
+
 ## 🤬 关于那个傻逼原项目
 
 妈的，说真的，原项目作者就是个懒狗：
@@ -31,8 +35,11 @@
 # 克隆仓库
 git clone https://github.com/NyaNyagulugulu/ba.git
 
-# 构建
+# 构建（默认为1.21.1版本）
 ./gradlew build
+
+# 构建其他版本，例如1.16.5
+./gradlew build -PmcVersion=1.16.5
 ```
 
 ## 这个README是“deepsleep”写的，图一乐就行(
