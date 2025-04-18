@@ -13,7 +13,6 @@
 
 ## 🤬 关于那个傻逼原项目
 
-
 妈的，说真的，原项目作者就是个懒狗：
 
 - 停更？你妈呢停更，连公告都不发一个
@@ -32,14 +31,14 @@
 
 ## 📥 下载方式
 
-> 去 [Release 页面](https://github.com/NyaNyagulugulu/ba/releases) 下载  
+> 去 [Release 页面](https://github.com/NyaNyagulugulu/BlueArchiver/releases) 下载  
 > 傻逼原项目连个下载都要绕三圈，服了
 
 ## 🛠️ 构建方法
 
 ```bash
 # 克隆仓库
-git clone https://github.com/NyaNyagulugulu/ba.git
+git clone https://github.com/NyaNyagulugulu/BlueArchiver.git
 
 # 构建（默认为1.21.1版本）
 ./gradlew build
